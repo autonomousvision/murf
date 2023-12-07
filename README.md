@@ -37,6 +37,7 @@ MuRF supports multiple different baseline settings.
 <p align="center">
 MuRF achieves state-of-the-art performance under various evaluation settings.
 </p>
+
 ## Installation
 
 Our code is developed based on pytorch 1.10.1, CUDA 11.3 and python 3.8. 
