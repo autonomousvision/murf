@@ -1,0 +1,16 @@
+_parent_: configs/base.yaml
+
+tb: false
+batch_size: 1                                                
+
+log_sampler: true
+
+data_test:
+    mipnerf360:
+        root_dir: data/mipnerf360
+        dataset_name: mipnerf360                                          
+        img_wh:                                  
+        num_workers: 0                                        
+        max_len: -1
+        scene_list:
+    

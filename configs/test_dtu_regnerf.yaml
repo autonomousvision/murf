@@ -1,0 +1,15 @@
+_parent_: configs/base.yaml
+
+tb: false
+batch_size: 1                                                
+
+data_test:
+    dtu_regnerf:
+        root_dir: data/DTU
+        dataset_name: dtu_regnerf                                           
+        img_wh: [400, 304]                                   
+        downSample: 1.0 
+        num_workers: 0                                          
+        max_len: -1
+        test_views_method: fixed
+ 

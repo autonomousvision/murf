@@ -1,0 +1,16 @@
+_parent_: configs/base.yaml
+
+tb: false
+batch_size: 1                                               
+
+log_sampler: true
+
+data_test:
+    realestate_test:
+        root_dir: data/realestate
+        dataset_name: realestate_test                                            
+        img_wh: [256, 256]                                   
+        num_workers: 0                                          
+        max_len: -1
+        test_views_method: fixed
+

@@ -1,0 +1,14 @@
+_parent_: configs/base.yaml
+
+tb: false
+batch_size: 1                                                  
+
+data_test:
+    dtu:
+        root_dir: data/DTU
+        dataset_name: dtu                                            
+        img_wh: [640, 512]                                  
+        num_workers: 0                                          
+        max_len: -1
+        test_views_method: nearest
+ 

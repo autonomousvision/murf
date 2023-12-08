@@ -4,7 +4,7 @@
 - `RealEstate10K (256x256)` is the 256x256 resolution RealEstate10K dataset following [AttnRend](https://github.com/yilundu/cross_attention_renderer) for fair comparison.
 - `MIX1` denotes the mixed datasets of `ibrnet_collected`, `LLFF(training set)`, `Spaces`, `RealEstate10K (200-scene subset)` and `Google Scanned Objects` following [IBRNet](https://github.com/googleinterns/IBRNet#1-training-datasets) for fair comparison. The resolution of the `RealEstate10K` dataset here is 720x1280.
 
-- `MIX2` denotes the mixed datasets of `ibrnet_collected`, `LLFF (training set)`, `Spaces` and `RealEstate10K (10000-scene subset)` , the key difference with `MIX1` is the use of larger RealEstate10K subset (10000 vs. 200). 
+- `MIX2` denotes the mixed datasets of `ibrnet_collected`, `LLFF (training set)`, `Spaces` and `RealEstate10K (10000-scene subset)` . The key difference with `MIX1` is the use of larger RealEstate10K subset (10000 vs. 200). 
 - The `MuRF-mixdata` model is recommended for in-the-wild use cases.
 
 | Model                              |         Training Data          | Training Views |                           Download                           |

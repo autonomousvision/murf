@@ -16,7 +16,7 @@
     ·
     <a href="https://www.yf.io/">Fisher Yu</a>
   </p>
-  <h3 align="center"><a href="https://arxiv.org/abs/2312.04565">Paper</a> | <a href="https://haofeixu.github.io/murf/">Project Page</a> </h3>
+  <h3 align="center"><a href="https://arxiv.org/abs/2312.xxxxx">Paper</a> | <a href="https://haofeixu.github.io/murf/">Project Page</a> </h3>
   <div align="center"></div>
 </p>
 <p align="center">
@@ -37,7 +37,6 @@ MuRF supports multiple different baseline settings.
 <p align="center">
 MuRF achieves state-of-the-art performance under various evaluation settings.
 </p>
-
 ## Installation
 
 Our code is developed based on pytorch 1.10.1, CUDA 11.3 and python 3.8. 
@@ -66,10 +65,6 @@ The datasets used to train and evaluate our models are detailed in [DATASETS.md]
 
 
 
-**Working hard to clean and test all the code, expecting to release it very soon** 💪
-
-
-
 ## Evaluation
 
 The evaluation scripts used to reproduce the numbers in our paper are detailed in [scripts/*_evaluate.sh](scripts).
@@ -78,21 +73,7 @@ The evaluation scripts used to reproduce the numbers in our paper are detailed i
 
 ## Rendering
 
-The image and video rendering scripts are detailed in [scripts/*_render.sh](scripts).
-
-
-
-## Training
-
-All training scripts for different models on different datasets can be found at [scripts/*_train.sh](scripts).
-
-We support using tensorboard to monitor and visualize the training process. You can first start a tensorboard session with
-
-```
-tensorboard --logdir checkpoints
-```
-
-and then access [http://localhost:6006](http://localhost:6006/) in your browser.
+The rendering scripts are detailed in [scripts/*_render.sh](scripts).
 
 
 

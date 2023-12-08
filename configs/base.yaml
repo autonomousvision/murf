@@ -1,0 +1,65 @@
+# default
+
+name:                                                       # name of experiment run
+yaml:                                                       # config file (must be specified from command line)
+model: murf                                            # type of model
+seed: 0                                                     # seed number (for both numpy and pytorch)
+gpu_ids: [0]                                                # GPU id list
+cpu: false                                                  # run only on CPU (not supported now)
+load:                                                       # load checkpoint from filename
+n_src_views: 3                                              # number of source views
+batch_size: 1                                              # batch size
+max_epoch: 20                                             # train to maximum number of epochs
+resume: false                                               # resume training (true for latest checkpoint, or number for specific epoch number)
+output_path: outputs
+
+encoder:
+    attn_splits_list: [2]
+    cos_n_group: [8,8,6,4]
+    pretrain_weight: configs/pretrained_models/gmflow_sintel-0c07dcb3.pth
+    num_transformer_layers: 6
+    use_multiview_gmflow: true
+    add_per_view_attn: false                                # multiview version of gmflow
+    wo_self_attn: false
+    feature_sample_local_radius: 0
+    feature_sample_local_dilation: 1
+
+with_cnn_feature: true
+radiance_subsample_factor: 8
+sample_color_window_radius: 4
+decoder_input_feature: true
+input_viewdir_diff: true
+decoder_num_resblocks: 12
+conv_2plus1d: true
+residual_color_cosine: true
+upconv_channel_list: [128,64,16]
+
+decoder:                                                       # architectural options
+    net_width: 128
+    net_depth: 6
+    skip: [4]                                               # skip connections
+    posenc:                                                 # positional encoding
+        L_3D: 10                                            # number of bases (3D point)
+        L_view: 0                                           # number of bases (viewpoint)
+
+nerf:                                                       # NeRF-specific options
+    legacy_coord: true                                      # legacy coordinate adopted from the original codebase, to match the pretrain_weight
+    wo_render_interval: true
+    view_dep: true                                          # condition MLP on viewpoint
+    depth:                                                  # depth-related options
+        param: metric                                       # depth parametrization (for sampling along the ray)
+    sample_intvs: 64                                       # number of samples
+    sample_stratified: true                                 # stratified sampling, only used for training mode
+    fine_sampling: false                                    # hierarchical sampling with another NeRF
+    sample_intvs_fine:                                      # number of samples for the fine NeRF
+    density_noise_reg:                                      # Gaussian noise on density output as regularization
+    render_video: false
+
+loss_weight:
+    render: 1.
+    ssim: 1.
+    lpips: 1.
+
+no_val: true
+
+tb:                                                         # TensorBoard options
