@@ -16,7 +16,7 @@
     ·
     <a href="https://www.yf.io/">Fisher Yu</a>
   </p>
-  <h3 align="center"><a href="https://arxiv.org/abs/2312.xxxxx">Paper</a> | <a href="https://haofeixu.github.io/murf/">Project Page</a> </h3>
+  <h3 align="center"><a href="https://arxiv.org/abs/2312.04565">Paper</a> | <a href="https://haofeixu.github.io/murf/">Project Page</a> </h3>
   <div align="center"></div>
 </p>
 <p align="center">
@@ -102,7 +102,7 @@ and then access [http://localhost:6006](http://localhost:6006/) in your browser.
 @article{xu2023murf,
       title={MuRF: Multi-Baseline Radiance Fields},
       author={Xu, Haofei and Chen, Anpei and Chen, Yuedong and Sakaridis, Christos and Zhang, Yulun and Pollefeys, Marc and Geiger, Andreas and Yu, Fisher},
-      journal={arXiv:2312.xxxxx},
+      journal={arXiv:2312.04565},
       year={2023}
     }
 ```
