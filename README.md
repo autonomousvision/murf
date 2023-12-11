@@ -19,11 +19,10 @@
   <h3 align="center"><a href="https://arxiv.org/abs/2312.xxxxx">Paper</a> | <a href="https://haofeixu.github.io/murf/">Project Page</a> </h3>
   <div align="center"></div>
 </p>
-<p align="center">
-  <a href="">
-    <img src="https://haofeixu.github.io/murf/assets/teaser.png" alt="Logo" width="70%">
-  </a>
-</p>
+
+<div align="center">
+  <video src="https://github.com/autonomousvision/murf/assets/19343475/462c9784-aba8-4ceb-bda0-5f9cbcceba6d"/>
+</div>
 
 <p align="center">
 MuRF supports multiple different baseline settings.
