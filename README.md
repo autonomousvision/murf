@@ -76,6 +76,11 @@ The evaluation scripts used to reproduce the numbers in our paper are detailed i
 The rendering scripts are detailed in [scripts/*_render.sh](scripts).
 
 
+## Training
+
+The training scripts are detailed in [scripts/*_train.sh](scripts).
+
+
 
 ## Citation
 

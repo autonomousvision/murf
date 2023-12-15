@@ -8,7 +8,7 @@
 # 23.98, 0.800, 0.293
 CHECKPOINT_DIR=checkpoints/tmp && \
 mkdir -p ${CHECKPOINT_DIR} && \
-CUDA_VISIBLE_DEVICES=6 python test.py \
+CUDA_VISIBLE_DEVICES=0 python test.py \
 --output_path=${CHECKPOINT_DIR} \
 --load=pretrained/murf-realestate10k-2view-74b3217d.pth \
 --yaml=test_mipnerf360 \
@@ -20,12 +20,11 @@ CUDA_VISIBLE_DEVICES=6 python test.py \
 --data_test.mipnerf360.root_dir=UPDATE_WITH_YOUR_DATA_PATH
 
 
-
 # evaluate on mipnerf360 test set, 2 input views, with the model further finetuned on the mixed datasets
 # 25.30, 0.850, 0.192
 CHECKPOINT_DIR=checkpoints/tmp && \
 mkdir -p ${CHECKPOINT_DIR} && \
-CUDA_VISIBLE_DEVICES=7 python test.py \
+CUDA_VISIBLE_DEVICES=0 python test.py \
 --output_path=${CHECKPOINT_DIR} \
 --load=pretrained/murf-mipnerf360-2view-42df3b73.pth \
 --yaml=test_mipnerf360 \

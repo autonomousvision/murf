@@ -7,7 +7,7 @@
 # render videos from 2 input views
 CHECKPOINT_DIR=checkpoints/tmp && \
 mkdir -p ${CHECKPOINT_DIR} && \
-CUDA_VISIBLE_DEVICES=7 python test.py \
+CUDA_VISIBLE_DEVICES=0 python test.py \
 --output_path=${CHECKPOINT_DIR} \
 --load=pretrained/murf-mipnerf360-2view-42df3b73.pth \
 --yaml=test_video_mipnerf360 \
@@ -20,5 +20,3 @@ CUDA_VISIBLE_DEVICES=7 python test.py \
 --fine_inference_splits=2 \
 --data_test.mipnerf360.root_dir=UPDATE_WITH_YOUR_DATA_PATH \
 --no_resize_back
-
-

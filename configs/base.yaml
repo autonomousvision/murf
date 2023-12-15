@@ -16,7 +16,7 @@ output_path: outputs
 encoder:
     attn_splits_list: [2]
     cos_n_group: [8,8,6,4]
-    pretrain_weight: configs/pretrained_models/gmflow_sintel-0c07dcb3.pth
+    pretrain_weight: pretrained/gmflow_sintel-0c07dcb3.pth
     num_transformer_layers: 6
     use_multiview_gmflow: true
     add_per_view_attn: false                                # multiview version of gmflow

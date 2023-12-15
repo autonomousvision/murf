@@ -566,7 +566,7 @@ class Engine():
         target_gt = src.images[:, -
                                1].reshape(batch_size, n_chnl, -1).permute(0, 2, 1)
 
-        if getattr(self.opts.nerf, f"rand_rays_{mode}") and mode in ["train", "test-optim"] and not getattr(self.opts, 'radiance_downsample_factor', False):
+        if getattr(self.opts.nerf, f"rand_rays_{mode}", False) and mode in ["train", "test-optim"] and not getattr(self.opts, 'radiance_downsample_factor', False):
             target_gt = target_gt[:, pred.ray_idx]
 
         # compute image losses

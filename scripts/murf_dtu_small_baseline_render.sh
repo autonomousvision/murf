@@ -20,7 +20,6 @@ CUDA_VISIBLE_DEVICES=0 python test.py \
 --fine_inference_splits=2 
 
 
-
 # render videos from 3 input views
 CHECKPOINT_DIR=checkpoints/tmp && \
 mkdir -p ${CHECKPOINT_DIR} && \
@@ -32,6 +31,4 @@ CUDA_VISIBLE_DEVICES=0 python test.py \
 --weighted_cosine \
 --with_fine_nerf \
 --data_test.dtu.root_dir=UPDATE_WITH_YOUR_DATA_PATH 
-
-
 

@@ -7,7 +7,7 @@
 # render videos from 2 input views
 CHECKPOINT_DIR=checkpoints/tmp && \
 mkdir -p ${CHECKPOINT_DIR} && \
-CUDA_VISIBLE_DEVICES=6 python test.py \
+CUDA_VISIBLE_DEVICES=0 python test.py \
 --output_path=${CHECKPOINT_DIR} \
 --load=pretrained/murf-realestate10k-2view-74b3217d.pth \
 --yaml=test_video_realestate \
@@ -19,5 +19,3 @@ CUDA_VISIBLE_DEVICES=6 python test.py \
 --data_test.realestate_test.root_dir=UPDATE_WITH_YOUR_DATA_PATH \
 --data_test.realestate_test.pose_dir=UPDATE_WITH_YOUR_DATA_PATH \
 --fixed_realestate_test_set
-
-
