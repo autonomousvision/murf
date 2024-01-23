@@ -16,7 +16,7 @@
     ·
     <a href="https://www.yf.io/">Fisher Yu</a>
   </p>
-  <h3 align="center"><a href="https://arxiv.org/abs/2312.xxxxx">Paper</a> | <a href="https://haofeixu.github.io/murf/">Project Page</a> </h3>
+  <h3 align="center"><a href="https://arxiv.org/abs/2312.04565">Paper</a> | <a href="https://haofeixu.github.io/murf/">Project Page</a> </h3>
   <div align="center"></div>
 </p>
 
