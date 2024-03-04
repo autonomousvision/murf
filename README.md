@@ -86,11 +86,11 @@ The training scripts are detailed in [scripts/*_train.sh](scripts).
 ## Citation
 
 ```
-@article{xu2023murf,
+@inproceedings{xu2024murf,
       title={MuRF: Multi-Baseline Radiance Fields},
       author={Xu, Haofei and Chen, Anpei and Chen, Yuedong and Sakaridis, Christos and Zhang, Yulun and Pollefeys, Marc and Geiger, Andreas and Yu, Fisher},
-      journal={arXiv:2312.04565},
-      year={2023}
+      journal={CVPR},
+      year={2024}
     }
 ```
 
